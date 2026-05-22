@@ -1,366 +1,283 @@
 // app/page.jsx
-
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-white w-full min-h-screen">
+    <main className="bg-[#f2f2f2] w-full min-h-screen overflow-x-hidden font-sans">
 
       {/* HERO SECTION */}
-      <section className="w-full flex justify-center px-4 py-10">
-        <div className="max-w-[820px] w-full text-center">
+      <section className="w-full flex justify-center px-4 pt-4 pb-6 text-center">
+        <div className="max-w-[760px] w-full">
 
-          <h1 className="text-[42px] leading-tight font-extrabold text-[#005d66]">
-            The Tiny Thing I Added To My Morning Coffee Changed Everything…
+          <h1 className="text-[24px] md:text-[32px] leading-[1.05] font-extrabold text-[#111]">
+            That Helped Me Feel Lighter, Happier, And More Like Myself Again!
           </h1>
 
-          <p className="mt-6 text-[28px] leading-relaxed font-semibold text-[#333]">
-            I thought my best years were behind me… until this surprisingly
-            simple daily ritual helped me feel energized, confident,
-            and back in control again.
+          <p className="mt-4 text-[20px] md:text-[24px] font-medium text-[#333] leading-relaxed">
+            I never imagined something this simple could help me feel more
+            confident, energized, and comfortable in my own body again...
           </p>
 
-          {/* IMAGE */}
-          <div className="flex justify-center mt-10">
+          {/* HERO IMAGE */}
+          <div className="flex justify-center mt-6">
             <Image
               src="/11.png"
-              alt="man"
-              width={360}
-              quality={80}
-              height={430}
-              className="object-cover rounded-lg"
+              alt="After Transformation"
+              width={180}
+              height={240}
+              quality={100}
+              className="object-cover"
             />
-          </div>
-
-          {/* STORY */}
-          <div className="mt-12 text-[#222] text-[22px] leading-[2.1] font-medium">
-
-            <p>“Grandpa, can you hear me now?”</p>
-
-            <p>Every time Noah asked, my stomach sank.</p>
-
-            <p>
-              Truth is, I could barely follow conversations anymore.
-            </p>
-
-            <p>
-              Family dinners became exhausting.
-            </p>
-
-            <p>
-              I kept nodding and pretending I understood what everyone was saying.
-            </p>
-
-            <p>
-              The worst part?
-            </p>
-
-            <p>
-              Watching my grandson repeat himself over and over while I smiled
-              like everything was fine.
-            </p>
-
-            <p>
-              What kind of grandpa can’t even enjoy conversations with his family?
-            </p>
-
-            <p>
-              I started avoiding restaurants, phone calls… even birthdays.
-            </p>
-
-            <p>
-              Then came the appointment that shook me awake.
-            </p>
-
-            <p>
-              Sitting there hearing how quickly things could get worse,
-              I realized something:
-            </p>
-
-            <p>
-              If I didn’t make a change now,
-              I was going to miss the moments that mattered most.
-            </p>
-
           </div>
         </div>
       </section>
 
-      {/* SECOND SECTION */}
-      <section className="w-full flex justify-center px-4 py-14">
-        <div className="max-w-[820px] w-full text-center">
+      {/* STORY SECTION */}
+      <section className="w-full flex justify-center px-4 pb-8 text-center">
+        <div className="max-w-[760px] w-full text-[#222] text-[16px] md:text-[18px] leading-[2.6] font-normal space-y-2">
 
-          <div className="flex justify-center">
+          <p>“Grandma, why do you always sit down so much?”</p>
+
+          <p>That question hit me harder than anything else.</p>
+
+          <p>I used to avoid doing almost everything.</p>
+
+          <p>Too tired to go shopping.</p>
+
+          <p>Too exhausted to play outside.</p>
+
+          <p>Too uncomfortable even walking through the grocery store.</p>
+
+          <p>The truth?</p>
+
+          <p>I barely recognized the woman staring back at me anymore.</p>
+
+          <p>Every staircase felt exhausting.</p>
+
+          <p>My energy disappeared before the afternoon even started.</p>
+
+          <p>And every photo reminded me how much I had changed.</p>
+
+          <p>After my last doctor appointment, I realized something had to change.</p>
+
+          <p>Not later.</p>
+
+          <p>Now.</p>
+
+          <p>
+            Because I didn’t want to spend the rest of my life sitting on the
+            sidelines while everyone else kept living.
+          </p>
+
+          {/* BEFORE IMAGE */}
+          <div className="flex justify-center my-8">
             <Image
               src="/12.png"
-              alt="man"
-              width={300}
-              quality={80}
-              height={340}
-              className="object-cover rounded-lg"
+              alt="Before Transformation"
+              width={180}
+              height={240}
+              quality={100}
+              className="object-cover"
             />
           </div>
 
-          <h2 className="text-[36px] font-bold text-[#005d66] mt-12">
-            I Knew Something Had To Change… And Finally, It Did!
-          </h2>
+          <p>
+            Looking back, I was desperate enough to try almost anything.
+          </p>
 
-          <div className="mt-10 text-[#222] text-[22px] leading-[2.1] font-medium">
+          <p>And believe me... I did.</p>
 
-            <p>
-              Looking back, I was willing to try almost anything.
-            </p>
+          <p>Low-carb? Miserable.</p>
 
-            <p>
-              And trust me… I did.
-            </p>
+          <p>Salads every day? Lasted a week.</p>
 
-            <p>
-              Those bulky hearing devices?
-            </p>
+          <p>Those intense “fat burning” workouts?</p>
 
-            <p>
-              Uncomfortable and frustrating.
-            </p>
+          <p>My knees still haven’t forgiven me.</p>
 
-            <p>
-              Turning the TV volume up?
-            </p>
+          <p>
+            I counted calories, skipped desserts, bought expensive supplements...
+          </p>
 
-            <p>
-              My family hated it.
-            </p>
+          <p>and somehow still felt stuck.</p>
 
-            <p>
-              Pretending I heard conversations?
-            </p>
+          <p>Every failed attempt made me feel more hopeless.</p>
 
-            <p>
-              Exhausting.
-            </p>
+          <p>
+            I honestly started wondering if maybe this was just life after 50.
+          </p>
 
-            <p>
-              Every awkward “What?” made me feel older and more isolated.
-            </p>
-
-            <p>
-              I started wondering if this was just life after 50.
-            </p>
-
-            <p>
-              But deep down, I refused to believe the best moments of my life
-              were supposed to feel this distant.
-            </p>
-
-          </div>
         </div>
       </section>
 
-      {/* HEADING BAR */}
-      <section className="w-full mt-8">
-        <div className="bg-[#005d66] py-5 px-4 text-center">
-          <h2 className="text-white text-[32px] font-bold">
-            The Discovery That Completely Changed My Life!
+      {/* TEAL BANNER */}
+      <section className="w-full mt-2 px-4">
+        <div className="bg-[#004d56] py-2 text-center">
+          <h2 className="text-white text-[22px] md:text-[30px] font-bold">
+            The Discovery That Changed Everything...
           </h2>
         </div>
       </section>
 
-      {/* CONTENT */}
-      <section className="w-full flex justify-center px-4 py-14">
-        <div className="max-w-[820px] w-full text-center">
+      {/* DISCOVERY SECTION */}
+      <section className="w-full flex justify-center px-4 py-8 text-center">
+        <div className="max-w-[760px] w-full text-[#222] text-[16px] md:text-[18px] leading-[2.6] font-normal space-y-2">
 
-          <div className="text-[#222] text-[22px] leading-[2.1] font-medium">
+          <p>
+            Late one evening while scrolling online, I came across people
+            talking about a strange “Morning Coffee Trick.”
+          </p>
 
-            <p>
-              Late one evening while scrolling Facebook,
-              I came across something people were calling a
-              “Morning Coffee Trick.”
-            </p>
+          <p>Honestly?</p>
 
-            <p>
-              Honestly? I almost ignored it.
-            </p>
+          <p>I almost ignored it.</p>
 
-            <p>
-              But the next day, my old friend Mark stopped by looking happier,
-              sharper, and more energetic than I’d seen him in years.
-            </p>
+          <p>
+            But the next morning, my friend Linda stopped by looking slimmer,
+            happier, and more energetic than I’d seen her in years.
+          </p>
 
-            <p>
-              When I asked what changed,
-              he mentioned the exact same coffee drops I saw online.
-            </p>
+          <p>I had to ask what changed.</p>
 
-            <p>
-              Now I was curious.
-            </p>
+          <p>
+            That’s when she mentioned the exact same coffee trick I saw online.
+          </p>
 
-            <p>
-              “No complicated routines,” he told me.
-            </p>
+          <p>Now I was curious.</p>
 
-            <p>
-              “Just add a few drops to your morning coffee.”
-            </p>
+          <p>“No crazy meal plans,” she told me.</p>
 
-            <p>
-              I’ll admit… I was skeptical at first.
-            </p>
+          <p>
+            “No exhausting workouts. Just one simple morning habit.”
+          </p>
 
-            <p>
-              But after everything I’d been struggling with,
-              I figured I had nothing left to lose.
-            </p>
+          <p>At first, I was skeptical.</p>
 
-            <p>
-              So the very next morning,
-              I tried it for myself.
-            </p>
+          <p>
+            But after years of frustration, I figured I had nothing left to lose.
+          </p>
 
-          </div>
+          <p>So the next morning...</p>
+
+          <p>I tried it myself.</p>
 
           {/* ARROW */}
-          <div className="mt-12 text-[90px] text-[#57d487] animate-bounce">
-            ↓
+          <div className="pt-4 flex justify-center">
+            <div className="text-[70px] leading-none text-[#54d6d6] animate-bounce">
+              ⌄
+            </div>
           </div>
 
-          {/* CTA */}
-          <div className="flex justify-center mt-4">
+          {/* CTA BUTTON */}
+          <div className="flex justify-center pt-2">
             <Link
               target="_blank"
-              href={"https://www.metabodrops.com/welcome?hop=onesumit"}
+              href="https://www.metabodrops.com/welcome?hop=onesumit"
             >
-              <button className="bg-[#ffd500] hover:bg-yellow-400 transition-all duration-300 text-black text-[24px] font-bold px-10 py-5 rounded-md shadow-lg">
-                Watch The Free Video Before It’s Taken Down →
+              <button className="bg-[#ffe100] hover:bg-yellow-400 text-black text-[20px] font-medium px-10 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-yellow-600 transition-all">
+                Show Me The Morning Coffee Trick →
               </button>
-
             </Link>
           </div>
 
         </div>
       </section>
 
-      {/* RESULT HEADING */}
-      <section className="w-full mt-10">
-        <div className="bg-[#005d66] py-5 px-4 text-center">
-          <h2 className="text-white text-[32px] font-bold">
-            What Happened After That Still Feels Unreal To Me…
+      {/* SECOND TEAL BANNER */}
+      <section className="w-full mt-2 px-4">
+        <div className="bg-[#004d56] py-2 text-center">
+          <h2 className="text-white text-[22px] md:text-[30px] font-bold">
+            What Happened Next Still Feels Unreal...
           </h2>
         </div>
       </section>
 
-      {/* RESULT CONTENT */}
-      <section className="w-full flex justify-center px-4 py-14">
-        <div className="max-w-[820px] w-full text-center">
+      {/* RESULTS SECTION */}
+      <section className="w-full flex justify-center px-4 py-8 text-center">
+        <div className="max-w-[760px] w-full text-[#222] text-[16px] md:text-[18px] leading-[2.6] font-normal space-y-2">
 
-          <div className="text-[#222] text-[22px] leading-[2.1] font-medium">
+          <p>Today, I finally feel like ME again.</p>
 
-            <p>
-              Today, I finally feel like myself again.
-            </p>
+          <p>My clothes fit better.</p>
 
-            <p>
-              Conversations are easier.
-            </p>
+          <p>My energy lasts all day.</p>
 
-            <p>
-              Family dinners don’t leave me frustrated anymore.
-            </p>
+          <p>
+            And for the first time in years, I don’t dread looking in the mirror anymore.
+          </p>
 
-            <p>
-              And for the first time in years,
-              I’m not constantly asking people to repeat themselves.
-            </p>
+          <p>Friends keep asking what I’m doing differently.</p>
 
-            <p>
-              My grandson actually laughs when we talk now
-              instead of saying, “Never mind.”
-            </p>
+          <p>
+            Even my family noticed the change almost immediately.
+          </p>
 
-            <p>
-              Even my family noticed the difference almost immediately.
-            </p>
+          <p>
+            I have energy to walk, travel, shop, and actually enjoy time with my grandkids again.
+          </p>
 
-            <p>
-              I’m more confident, more social,
-              and honestly… happier than I’ve been in a long time.
-            </p>
+          <p>That afternoon energy crash?</p>
 
-            <p>
-              Last weekend, I sat through an entire family gathering
-              without feeling lost or embarrassed.
-            </p>
+          <p>Gone.</p>
 
-            <p>
-              Looking around at everyone smiling and talking,
-              it hit me:
-            </p>
+          <p>I don’t feel constantly sluggish anymore.</p>
 
-            <p>
-              I almost missed these moments.
-            </p>
-
-            <p>
-              Turns out, one small daily change made a much bigger difference
-              than I ever expected.
-            </p>
-
-            <p>
-              And honestly?
-            </p>
-
-            <p>
-              I’m grateful every single day that I decided to try it.
-            </p>
-
-          </div>
-
-          {/* IMAGE */}
-          <div className="flex justify-center mt-12">
+          {/* FINAL IMAGE */}
+          <div className="flex justify-center my-8">
             <Image
               src="/13.png"
-              alt="man"
-              width={300}
-              height={430}
+              alt="Final Transformation"
+              width={180}
+              height={240}
               quality={100}
-              className="object-cover rounded-lg"
+              className="object-cover"
             />
           </div>
 
-          {/* FINAL TEXT */}
-          <div className="mt-12 text-[#222] text-[22px] leading-[2.1] font-medium">
+          <p>And honestly?</p>
 
-            <p>
-              Don’t wait the way I did.
-            </p>
+          <p>I feel happier than I have in a very long time.</p>
 
-            <p>
-              The moments with your family are too important to miss.
-            </p>
+          <p>
+            Last month, my granddaughter asked me to race her through the park...
+          </p>
 
-            <p>
-              Sometimes the simplest daily habit
-              can create the biggest transformation.
-            </p>
+          <p>and this time?</p>
 
-          </div>
+          <p>I actually could.</p>
+
+          <p>
+            Looking back now, it scares me thinking about how close I came to
+            accepting that miserable version of myself forever.
+          </p>
+
+          <p>
+            Turns out, one tiny daily habit changed far more than I ever imagined.
+          </p>
+
+          <p>Don’t wait the way I did.</p>
+
+          <p>
+            Tap below to discover the Morning Coffee Trick everyone’s talking about 👇
+          </p>
 
           {/* ARROW */}
-          <div className="mt-12 text-[90px] text-[#57d487] animate-bounce">
-            ↓
+          <div className="pt-4 flex justify-center">
+            <div className="text-[70px] leading-none text-[#54d6d6] animate-bounce">
+              ⌄
+            </div>
           </div>
 
           {/* FINAL CTA */}
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center pt-2">
             <Link
               target="_blank"
-              href={"https://www.metabodrops.com/welcome?hop=onesumit"}
+              href="https://www.metabodrops.com/welcome?hop=onesumit"
             >
-              <button className="bg-[#ffd500] hover:bg-yellow-400 transition-all duration-300 text-black text-[24px] font-bold px-10 py-5 rounded-md shadow-lg">
-                Watch The Free Video Before It’s Taken Down →
+              <button className="bg-[#ffe100] hover:bg-yellow-400 text-black text-[20px] font-medium px-10 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-yellow-600 transition-all">
+                Discover The Morning Coffee Trick That’s Changing Lives →
               </button>
-
             </Link>
           </div>
 
@@ -368,42 +285,74 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="w-full bg-[#24363a] mt-20 py-14 px-5 text-center">
+      <footer className="w-full bg-[#233539] py-10 px-5 text-center text-gray-300 text-[11px] leading-6 mt-10">
 
-        <p className="text-white text-[15px]">
-          © Copyright 2026 - All Rights Reserved
+        <p className="text-[12px] mb-4">
+          © Copyright 2025 - All Rights Reserved
         </p>
 
-        <div className="mt-5 flex justify-center gap-5 flex-wrap text-[14px] text-white">
-          <Link href="/privacypolicy" className="hover:text-[#ffd500]">Privacy Policy</Link>
-          <Link href="/termsofservice" className="hover:text-[#ffd500]">Terms & Conditions</Link>
-          <Link href="/disclaimer" className="hover:text-[#ffd500]">Disclaimer</Link>
-          <Link href="/contactus" className="hover:text-[#ffd500]">Contact Us</Link>
+        <div className="flex justify-center gap-3 flex-wrap text-[12px] mb-5 text-white">
+          <Link href="/privacypolicy" className="hover:underline">
+            Privacy Policy
+          </Link>
+
+          <span>|</span>
+
+          <Link href="/termsofservice" className="hover:underline">
+            Terms and Conditions
+          </Link>
+
+          <span>|</span>
+
+          <Link href="/disclaimer" className="hover:underline">
+            Disclaimer
+          </Link>
+
+          <span>|</span>
+
+          <Link href="/contactus" className="hover:underline">
+            Contact Us
+          </Link>
         </div>
 
-        <div className="mt-8 max-w-[1000px] mx-auto text-gray-300 text-[12px] leading-7">
+        <div className="max-w-[1000px] mx-auto space-y-3 text-gray-300">
 
           <p>
-            This website is not affiliated with Facebook or Meta Platforms Inc.
+            This site is not a part of the Facebook website or Facebook Inc.
+            Additionally, This site is NOT endorsed by Facebook in any way.
+            FACEBOOK is a trademark of FACEBOOK, Inc.
+          </p>
+
+          <p className="font-semibold">
+            FDA Compliance
           </p>
 
           <p>
-            The statements on this page have not been evaluated by the FDA.
+            The information on this website has not been evaluated by the Food & Drug Administration
+            or any other regulatory body. We do not aim to diagnose, treat, cure, or prevent any
+            health conditions or diseases. The content is provided for educational purposes only.
           </p>
 
           <p>
-            Results may vary from person to person depending on lifestyle,
-            body type, and routine.
+            Results May Vary: Results and testimonials featured on this site are not a guarantee
+            of specific outcomes. Individual results may vary.
           </p>
 
           <p>
-            This content is for informational purposes only and does not replace
-            professional medical advice.
+            Some names and personal identifying details have been changed to protect privacy.
+          </p>
+
+          <p>
+            No individual result should be considered typical.
+          </p>
+
+          <p>
+            Enjoy & Thank you!
           </p>
 
         </div>
-
       </footer>
+
     </main>
   );
 }
