@@ -4,17 +4,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-[#f2f2f2] w-full min-h-screen overflow-x-hidden font-sans">
+    <main className="bg-[#fff] w-full min-h-screen overflow-x-hidden font-sans">
 
       {/* HERO SECTION */}
       <section className="w-full flex justify-center px-4 pt-4 pb-6 text-center">
         <div className="max-w-[760px] w-full">
 
-          <h1 className="text-[24px] md:text-[32px] leading-[1.05] font-extrabold text-[#111]">
+          <h1 className="text-[34px] md:text-[52px] leading-[1.1] font-extrabold text-[#004550]">
             That Helped Me Feel Lighter, Happier, And More Like Myself Again!
           </h1>
 
-          <p className="mt-4 text-[20px] md:text-[24px] font-medium text-[#333] leading-relaxed">
+          <p className="mt-4 text-[22px] md:text-[34px] font-medium text-[#333] leading-relaxed">
             I never imagined something this simple could help me feel more
             confident, energized, and comfortable in my own body again...
           </p>
@@ -24,10 +24,10 @@ export default function Home() {
             <Image
               src="/11.png"
               alt="After Transformation"
-              width={180}
-              height={240}
+              width={300}
+              height={500}
               quality={100}
-              className="object-cover"
+              className="object-cover w-full max-w-[300px] h-auto"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* STORY SECTION */}
       <section className="w-full flex justify-center px-4 pb-8 text-center">
-        <div className="max-w-[760px] w-full text-[#222] text-[16px] md:text-[18px] leading-[2.6] font-normal space-y-2">
+        <div className="max-w-[760px] w-full text-[#222] text-[18px] md:text-[20px] leading-[1.8] font-normal space-y-4">
 
           <p>“Grandma, why do you always sit down so much?”</p>
 
@@ -75,10 +75,10 @@ export default function Home() {
             <Image
               src="/12.png"
               alt="Before Transformation"
-              width={180}
-              height={240}
+              width={300}
+              height={500}
               quality={100}
-              className="object-cover"
+              className="object-cover w-full max-w-[300px] h-auto"
             />
           </div>
 
@@ -108,13 +108,13 @@ export default function Home() {
             I honestly started wondering if maybe this was just life after 50.
           </p>
 
-        </div>
+          </div>
       </section>
 
       {/* TEAL BANNER */}
       <section className="w-full mt-2 px-4">
-        <div className="bg-[#004d56] py-2 text-center">
-          <h2 className="text-white text-[22px] md:text-[30px] font-bold">
+        <div className="bg-[#004d56] py-3 text-center">
+          <h2 className="text-white text-[22px] md:text-[34px] font-bold">
             The Discovery That Changed Everything...
           </h2>
         </div>
@@ -122,7 +122,7 @@ export default function Home() {
 
       {/* DISCOVERY SECTION */}
       <section className="w-full flex justify-center px-4 py-8 text-center">
-        <div className="max-w-[760px] w-full text-[#222] text-[16px] md:text-[18px] leading-[2.6] font-normal space-y-2">
+        <div className="max-w-[760px] w-full text-[#222] text-[18px] md:text-[20px] leading-[1.8] font-normal space-y-4">
 
           <p>
             Late one evening while scrolling online, I came across people
@@ -164,7 +164,7 @@ export default function Home() {
 
           {/* ARROW */}
           <div className="pt-4 flex justify-center">
-            <div className="text-[70px] leading-none text-[#54d6d6] animate-bounce">
+            <div className="text-[60px] md:text-[70px] leading-none text-[#54d6d6] animate-bounce select-none">
               ⌄
             </div>
           </div>
@@ -174,8 +174,9 @@ export default function Home() {
             <Link
               target="_blank"
               href="https://www.metabodrops.com/welcome?hop=onesumit"
+              className="w-full max-w-[450px] inline-block"
             >
-              <button className="bg-[#ffe100] hover:bg-yellow-400 text-black text-[20px] font-medium px-10 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-yellow-600 transition-all">
+              <button className="w-full bg-[#ffe100] hover:bg-yellow-400 text-black text-[20px] font-medium px-6 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-[#5CA796] transition-all">
                 Show Me The Morning Coffee Trick →
               </button>
             </Link>
@@ -186,8 +187,8 @@ export default function Home() {
 
       {/* SECOND TEAL BANNER */}
       <section className="w-full mt-2 px-4">
-        <div className="bg-[#004d56] py-2 text-center">
-          <h2 className="text-white text-[22px] md:text-[30px] font-bold">
+        <div className="bg-[#004d56] py-3 text-center">
+          <h2 className="text-white text-[22px] md:text-[34px] font-bold">
             What Happened Next Still Feels Unreal...
           </h2>
         </div>
@@ -195,9 +196,9 @@ export default function Home() {
 
       {/* RESULTS SECTION */}
       <section className="w-full flex justify-center px-4 py-8 text-center">
-        <div className="max-w-[760px] w-full text-[#222] text-[16px] md:text-[18px] leading-[2.6] font-normal space-y-2">
+        <div className="max-w-[760px] w-full text-[#222] text-[18px] md:text-[20px] leading-[1.8] font-normal space-y-4">
 
-          <p>Today, I finally feel like ME again.</p>
+          <p className="text-[22px] md:text-[24px]">Today, I finally feel like ME again.</p>
 
           <p>My clothes fit better.</p>
 
@@ -228,10 +229,10 @@ export default function Home() {
             <Image
               src="/13.png"
               alt="Final Transformation"
-              width={180}
-              height={240}
+              width={300}
+              height={500}
               quality={100}
-              className="object-cover"
+              className="object-cover w-full max-w-[300px] h-auto"
             />
           </div>
 
@@ -262,36 +263,17 @@ export default function Home() {
             Tap below to discover the Morning Coffee Trick everyone’s talking about 👇
           </p>
 
-          {/* ARROW */}
-          <div className="pt-4 flex justify-center">
-            <div className="text-[70px] leading-none text-[#54d6d6] animate-bounce">
-              ⌄
-            </div>
-          </div>
-
-          {/* FINAL CTA */}
-          <div className="flex justify-center pt-2">
-            <Link
-              target="_blank"
-              href="https://www.metabodrops.com/welcome?hop=onesumit"
-            >
-              <button className="bg-[#ffe100] hover:bg-yellow-400 text-black text-[20px] font-medium px-10 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-yellow-600 transition-all">
-                Discover The Morning Coffee Trick That’s Changing Lives →
-              </button>
-            </Link>
-          </div>
-
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="w-full bg-[#233539] py-10 px-5 text-center text-gray-300 text-[11px] leading-6 mt-10">
+      <footer className="w-full bg-[#233539] py-10 px-5 text-center text-gray-300 text-[18px] leading-6 mt-10">
 
         <p className="text-[12px] mb-4">
-          © Copyright 2025 - All Rights Reserved
+          © Copyright 2026 - All Rights Reserved
         </p>
 
-        <div className="flex justify-center gap-3 flex-wrap text-[12px] mb-5 text-white">
+        <div className="flex justify-center gap-3 flex-wrap text-[18px] mb-5 text-white">
           <Link href="/privacypolicy" className="hover:underline">
             Privacy Policy
           </Link>
@@ -315,7 +297,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="max-w-[1000px] mx-auto space-y-3 text-gray-300">
+        <div className="max-w-[1000px] text-[18px] mx-auto space-y-3 text-gray-300">
 
           <p>
             This site is not a part of the Facebook website or Facebook Inc.
@@ -352,7 +334,6 @@ export default function Home() {
 
         </div>
       </footer>
-
     </main>
   );
 }
