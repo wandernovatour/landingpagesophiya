@@ -25,16 +25,14 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        
         {/* Meta Pixel Code */}
-        <Script
-          id="facebook-pixel"
-          strategy="afterInteractive"
-        >
+        <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)n=f.fbq;n.push=n;n.loaded=!0;n.version='2.0';
+            if(!f._fbq)f.fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
             n.queue=[];t=b.createElement(e);t.async=!0;
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}
@@ -55,15 +53,16 @@ export default function RootLayout({ children }) {
             alt=""
           />
         </noscript>
+        {/* End Meta Pixel Code */}
 
         {children}
 
-        {/* Floating CTA Button */}
+        {/* Fixed CTA Button */}
         <a
           href="https://www.metabodrops.com/welcome?hop=onesumit"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-10 right-10 bg-[#107E8B] text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition-transform"
+          className="fixed bottom-10 right-10 cursor-pointer bg-[#107E8B] text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition-transform"
         >
           Special Video <span className="text-rose-500">❤</span>
         </a>
