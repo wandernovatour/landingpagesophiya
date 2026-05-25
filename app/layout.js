@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "DrShopHia - Home",
-  description: "Discover the latest wellness and lifestyle support at DrShopHia.",
+  description:
+    "Discover the latest wellness and lifestyle support at DrShopHia.",
 };
 
 export default function RootLayout({ children }) {
@@ -23,16 +24,48 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}
+      <body className="min-h-full flex flex-col">
+        
+        {/* Meta Pixel Code */}
+        <Script id="facebook-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f.fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}
+            (window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
 
-        {/* fixed section */}
+            fbq('init', '1773340400493531');
+            fbq('track', 'PageView');
+          `}
+        </Script>
 
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1773340400493531&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+        {/* End Meta Pixel Code */}
 
-        <Link href={"https://www.metabodrops.com/welcome?hop=onesumit"} target="_blank">
-          <button className="fixed bottom-10 right-10 cursor-pointer bg-[#107E8B] text-white px-4 py-2 rounded-full">
-            Special Video <span className="text-rose-500">❤</span>
-          </button>
-        </Link>
+        {children}
+
+        {/* Fixed CTA Button */}
+        <a
+          href="https://www.metabodrops.com/welcome?hop=onesumit"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-10 right-10 cursor-pointer bg-[#107E8B] text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition-transform"
+        >
+          Special Video <span className="text-rose-500">❤</span>
+        </a>
       </body>
     </html>
   );
