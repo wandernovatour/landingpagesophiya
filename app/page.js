@@ -108,7 +108,7 @@ export default function Home() {
             I honestly started wondering if maybe this was just life after 50.
           </p>
 
-          </div>
+        </div>
       </section>
 
       {/* TEAL BANNER */}
@@ -166,6 +166,8 @@ export default function Home() {
           <div className="pt-4 flex justify-center">
             <div className="text-[60px] md:text-[70px] leading-none text-[#54d6d6] animate-bounce select-none">
               ⌄
+              <br />
+              ⌄
             </div>
           </div>
 
@@ -174,10 +176,10 @@ export default function Home() {
             <Link
               target="_blank"
               href="https://www.metabodrops.com/welcome?hop=onesumit"
-              className="w-full max-w-[450px] inline-block"
+              className="w-full max-w-[1270px] inline-block cursor-pointer"
             >
-              <button className="w-full bg-[#ffe100] hover:bg-yellow-400 text-black text-[20px] font-medium px-6 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-[#5CA796] transition-all">
-                Show Me The Morning Coffee Trick →
+              <button className="w-full bg-[#ffe100] hover:bg-yellow-400 text-black text-[40px] font-medium px-6 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-[#5CA796] transition-all">
+                Show Me The Morning Coffee Trick <span className="text-[60px] animate-pulse">→</span>
               </button>
             </Link>
           </div>
@@ -265,6 +267,26 @@ export default function Home() {
 
         </div>
       </section>
+      <div className="pt-4 flex justify-center">
+        <div className="text-[60px] md:text-[70px] leading-none text-[#54d6d6] animate-bounce select-none">
+          ⌄
+          <br />
+          ⌄
+        </div>
+      </div>
+
+      {/* CTA BUTTON */}
+      <div className="flex justify-center pt-2">
+        <Link
+          target="_blank"
+          href="https://www.metabodrops.com/welcome?hop=onesumit"
+          className="w-full max-w-[1270px] inline-block cursor-pointer"
+        >
+          <button className="w-full bg-[#ffe100] hover:bg-yellow-400 text-black text-[60px] font-medium px-6 py-3 rounded shadow-[0_5px_10px_rgba(0,0,0,0.25)] border-b-[4px] border-[#5CA796] transition-all">
+            Show Me The Morning Coffee Trick <span className="text-[60px] animate-pulse">→</span>
+          </button>
+        </Link>
+      </div>
 
       {/* FOOTER */}
       <footer className="w-full bg-[#233539] py-10 px-5 text-center text-gray-300 text-[18px] leading-6 mt-10">
