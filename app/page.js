@@ -8,15 +8,14 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="w-full flex justify-center px-4 pt-4 pb-6 text-center">
-        <div className="max-w-[760px] w-full">
+        <div className="max-w-3xl w-full">
 
-          <h1 className="text-[34px] md:text-[52px] leading-[1.1] font-extrabold text-[#004550]">
-            That Helped Me Feel Lighter, Happier, And More Like Myself Again!
+          <h1 className="text-[34px] md:text-[48px] leading-[1.1] font-extrabold text-[#004550]">
+            Helped Me Feel Lighter, Happier & Like Myself Again!
           </h1>
 
-          <p className="mt-4 text-[22px] md:text-[34px] font-medium text-[#333] leading-relaxed">
-            I never imagined something this simple could help me feel more
-            confident, energized, and comfortable in my own body again...
+          <p className="mt-4 text-[22px] md:text-[28px] font-medium text-[#333] leading-relaxed">
+            I never imagined I could look and feel this amazing again!
           </p>
 
           {/* HERO IMAGE */}
@@ -161,7 +160,7 @@ export default function Home() {
           <p>So the next morning...</p>
 
           <p>I tried it myself.</p>
-{/* hello  */}
+          {/* hello  */}
           {/* ARROW */}
           <div className="pt-4 flex justify-center">
             <div className="text-[60px] md:text-[70px] leading-none text-[#54d6d6] animate-bounce select-none">
